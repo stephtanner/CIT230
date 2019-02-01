@@ -1,0 +1,56 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.motto{
+    font-size: .8em;
+    margin-top: -2em;
+}
+.logo, .titleMotto {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;   
+}
+
+/*Here I am learning how to do the menu dropdown button initial code from w3schools*/
+/* Dropdown Button */
+.dropbtn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #57859A;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: block;
+    width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #2C4E59;}
