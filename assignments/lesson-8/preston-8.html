@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Site Page">
+    <title>Simply Frigid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/small-8.css">
+    <link rel="stylesheet" type="text/css" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+</head>
+   
+<body>
+    <header>
+        <div class="centeredBox">
+            <figure>
+                <img class="logo" src="images/logoweb.jpg" alt="Simply Frigid Logo">
+            </figure>
+            <div class="titleTag">
+                <h1 class=title>Simply Frigid</h1>
+                <div class="motto">
+                    <p>Because You Never Know With Idaho</p>
+                </div>
+            </div>
+            <div class=currentConditions>
+                <img src="images/sun.png" alt="sunny">
+                <p>Currently: Sunny</p>
+            </div>
+            </div>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleMenu()">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>Preston</h1>
+        <div class="heroImage">
+            <div class="weatherSummary summaryBackground">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>Temperature: <span id="temp">56</span>&deg;F</p>
+                <p>Humidity: 68%</p>
+                <p>Wind Speed: <span id="wind">12</span>mph</p>
+                <p>Wind Chill: <span id="windchillOutput"></span>&deg;F</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h1>Weather Forecast</h1>
+            <table>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td><img src="images/weather-images/snow-flurry.png" alt="Snow Flurry"></td>
+                <td><img src="images/weather-images/sunny.png" alt="Sunny"></td> 
+                <td><img src="images/weather-images/snow.png" alt="Snow"></td> 
+                <td><img src="images/weather-images/snow.png" alt="Snow"></td> 
+                <td><img src="images/weather-images/cloudy.png" alt="Cloudy"></td> 
+            </tr>
+            <tr>
+                <td>26&deg;F</td> 
+                <td>13&deg;F</td>
+                <td>22&deg;F</td>
+                <td>22&deg;F</td>
+                <td>27&deg;F</td>
+            </tr>
+            </table>
+        </div>
+
+        <article>
+            <div class="coverImage">
+                <div class="article">
+            <h1>Fresh Raspberry Ice Cream</h1>
+            <h4>by Stephanie Tanner</h4>
+                </div>
+            </div>
+            <p>One of my favorite times of year here in Idaho is July, when raspberry season peaks. I spend most mornings meticulously picking little red berries, making sure to not miss any hiding below each leaf. I take my bounty inside to carefully wash and wait for the evening. The family gathers. First in the kitchen to prepare, then moves outside to enjoy. We grab bowls, spoons, a carton of vanilla ice cream, and our fresh raspberries. Outside we sit in the cool air after sunset and enjoy a bowl full of vanilla ice cream topped with raspberries from the garden. <button type="button" href="#">Read More</button></p> 
+        </article>
+
+        <section class="contactInformation">
+            <h1>Contact Information</h1>
+            <div class="centeredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
+            <img src="images/map.jpg" alt="image of headquarters">
+            </div>
+        </section>
+    </main>
+    <footer>
+<p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    </footer>
+</body>
+</html>

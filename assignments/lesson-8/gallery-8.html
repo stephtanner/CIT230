@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Site Page">
+    <title>Simply Frigid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/small-8.css">
+    <link rel="stylesheet" type="text/css" href="css/medium-8.css">
+    <link rel="stylesheet" type="text/css" href="css/large-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+</head>
+   
+<body>
+    <header>
+        <div class="centeredBox">
+            <figure>
+                <img class="logo" src="images/logoweb.jpg" alt="Simply Frigid Logo">
+            </figure>
+            <div class="titleTag">
+                <h1 class=title>Simply Frigid</h1>
+                <div class="motto">
+                    <p>Because You Never Know With Idaho</p>
+                </div>
+            </div>
+            <div class=currentConditions>
+                <img src="images/sun.png" alt="sunny">
+                <p>Currently: Sunny</p>
+            </div>
+            </div>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdownMenu()">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>Gallery</h1>
+        <div class="gridGallery">
+            <div class="box-shadow gallery">
+                <img src="images/gallery/fog.jpg">
+                <div class="desc">A foggy road</div>
+            </div>
+        
+            <div class="box-shadow gallery">
+                <img src="images/gallery/lightning.jpg">
+                <div class="desc">Lightning storm</div>
+            </div>
+        
+            <div class="box-shadow gallery">
+                <img src="images/gallery/sunny-field.jpg">
+                <div class="desc">A sunny, fall day</div>
+            </div>
+        
+            <div class="box-shadow gallery">
+                <img src="images/gallery/snow.jpg">
+                <div class="desc">Snow at the cabin</div>
+            </div>
+        
+            <div class="box-shadow gallery">
+                <img src="images/gallery/sunny.jpg">
+                <div class="desc">Summer Fields</div>
+            </div>
+        
+            <div class="box-shadow gallery">
+                <img src="images/gallery/tornado.jpg">
+                <div class="desc">Tornado in spring</div>
+            </div>
+
+            <div class="box-shadow gallery">
+                <img src="images/gallery/rain.jpg">
+                <div class="desc">Summer rain storm</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+<p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    </footer>
+</body>
+</html>
