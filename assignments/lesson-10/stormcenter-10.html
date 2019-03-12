@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Site Page">
+    <title>Simply Frigid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/small-9.css">
+    <link rel="stylesheet" type="text/css" href="css/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+</head>
+   
+<body>
+    <header>
+        <div class="centeredBox">
+            <figure>
+                <img class="logo" src="images/logoweb.jpg" alt="Simply Frigid Logo">
+            </figure>
+            <div class="titleTag">
+                <h1 class=title>Simply Frigid</h1>
+                <div class="motto">
+                    <p>Because You Never Know With Idaho</p>
+                </div>
+            </div>
+            <div class=currentConditions>
+                <img src="images/sun.png" alt="sunny">
+                <p>Currently: Sunny</p>
+            </div>
+            </div>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleMenu()">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></li>
+                    <li><a href="stormcenter-10.html">Storm Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="stormForm">
+        <h1>Storm Center</h1>
+        <h2>Report Weather in Your Travel Area</h2>
+        <form action="thanks-10.html">
+            <p>What is your full name?</p>
+            <input type="text" placeholder="Joe Smith" required pattern="[A-Za-z]{5,}" name="name">
+            <br>
+            <p>What is your email address?</p>
+            <input type="email" placeholder="email@gmail.com" required name="email">
+            <br>
+            <p>What is your phone number?</p>
+            <input type="tel" required placeholder="XXX-XXX-XXXX" name="phoneNumber">
+            <br>
+            <p>What is your zip code?</p>
+            <input type="number" required placeholder="XXXXX" name="zipCode">
+            <br>
+            <p>What is the date of this storm?</p>
+            <input type="date" name="stormDate" placeholder="Storm Date">
+            <br>
+            <p>What type of storm are you experiencing?</p>
+            <input list="stormType" name="stormType" placeholder="Storm Type">
+                <datalist id="stormType">
+                    <option value="Flash Flood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Blizzard">Blizzard</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </datalist>
+            <br>
+            <p>On a scale of 1-10, how severe is the storm, with one being mild and 10 being severe?</p>
+            <div class="inline">
+                <p>Mild</p>
+                <input type="range" name="severity" placeholder="Storm Severity" min="0" max="10" steps="1" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		          <span id="ratingvalue">1</span>
+                <p>Severe</p>
+            </div>
+            <br>
+            <p>In which region is this storm located?</p>
+            <select name="stormRegion" placeholder="Select Region">
+                <option value="Select Region" disabled selected>Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Fish Haven">Fish Haven</option>
+                <option value="Soda Springs">Soda Springs</option>
+            </select>
+            <br>
+            <p>Are you in danger?</p>
+            <input type="radio" name="inDanger" value="Yes"> Yes<br>
+            <input type="radio" name="inDanger" value="Maybe"> Maybe<br>
+            <input type="radio" name="inDanger" value="No"> No<br>
+           
+            <p>Additional Comments or Information</p>
+            <textarea name="comment" rows="6" cols="30"></textarea>
+            <br>
+            <input type="submit">        
+        </form> 
+        </div>
+    </main>
+    <footer>
+<p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+        <script src="scripts/range.js"></script>
+    </footer>
+</body>
+</html>
