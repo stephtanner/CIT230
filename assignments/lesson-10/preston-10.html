@@ -51,10 +51,10 @@
         <div class="heroImage">
             <div class="weatherSummary summaryBackground">
                 <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>Temperature: <span id="temp">56</span>&deg;F</p>
-                <p>Humidity: 68%</p>
-                <p>Wind Speed: <span id="wind">12</span>mph</p>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="temp"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span>mph</p>
                 <p>Wind Chill: <span id="windchillOutput"></span>&deg;F</p>
             </div>
         </div>
@@ -62,28 +62,31 @@
             <h1>Weather Forecast</h1>
             <table>
             <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
+                <th id="forecastDay1"></th>
+                <th id="forecastDay2"></th>
+                <th id="forecastDay3"></th>
+                <th id="forecastDay4"></th>
+                <th id="forecastDay5"></th>
             </tr>
             <tr>
-                <td><img src="images/weather-images/snow-flurry.png" alt="Snow Flurry"></td>
-                <td><img src="images/weather-images/sunny.png" alt="Sunny"></td> 
-                <td><img src="images/weather-images/snow.png" alt="Snow"></td> 
-                <td><img src="images/weather-images/snow.png" alt="Snow"></td> 
-                <td><img src="images/weather-images/cloudy.png" alt="Cloudy"></td> 
+                <td><img id="forecast1icon"></td>
+                <td><img id="forecast2icon"></td> 
+                <td><img id="forecast3icon"> </td> 
+                <td><img id="forecast4icon"></td> 
+                <td><img id="forecast5icon"></td> 
             </tr>
             <tr>
-                <td>26&deg;F</td> 
-                <td>13&deg;F</td>
-                <td>22&deg;F</td>
-                <td>22&deg;F</td>
-                <td>27&deg;F</td>
+                <td><span id="forecastDay1Temp"></span>&deg;F</td> 
+                <td><span id="forecastDay2Temp"></span>&deg;F</td>
+                <td><span id="forecastDay3Temp"></span>&deg;F</td>
+                <td><span id="forecastDay4Temp"></span>&deg;F</td>
+                <td><span id="forecastDay5Temp"></span>&deg;F</td>
             </tr>
             </table>
         </div>
+    <h1>Preston Town Events</h1>
+        <p id="prestonEvents"></p>
+        
 
         <article>
             <div class="coverImage">
@@ -97,16 +100,18 @@
 
         <section class="contactInformation">
             <h1>Contact Information</h1>
-            <div class="centeredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
+            <div class="contactCenteredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
             <img src="images/map.jpg" alt="image of headquarters">
             </div>
         </section>
     </main>
     <footer>
 <p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p>
+        <script src="scripts/weather.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+        <script src="scripts/individualtowndata.js"></script>
+        <script src="scripts/currentweather.js"></script>
     </footer>
 </body>
 </html>
