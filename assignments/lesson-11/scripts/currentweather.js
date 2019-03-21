@@ -1,7 +1,19 @@
 //current weather section of the site
-    let weatherRequest = new XMLHttpRequest();
+var mytown = document.getElementById("town").innerHTML;
+var param = "";
+    if (mytown === "Fish Haven"){
+        param = "id=5585010";
+    }
+    else if (mytown === "Soda Springs"){
+        param = "id=5607916";
+    }
+    else if (mytown === "Preston"){
+        param = "id=5604473";
+    }
+
+    var weatherRequest = new XMLHttpRequest();
     //create an "apiURLstring" variable that stores the API call URL
-    var apiURLstring = "http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial";
+    var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?" + param + "&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial";
 
     //call the open method of the weatherRequest  
     weatherRequest.open('GET', apiURLstring, true);
@@ -11,7 +23,7 @@
 
     //wait for the request object to load, use the onload method to encase the JSON parser and output statements in a generic function OR use an addEventListener using the load parameter
     weatherRequest.onload = function() {
-        let weatherData = JSON.parse(weatherRequest.responseText);
+        var weatherData = JSON.parse(weatherRequest.responseText);
 
     //Weather Summary Section
     var weatherTemp = weatherData.main.temp;
@@ -31,5 +43,7 @@
     
     var currently = weatherData.weather[0].main;
     document.getElementById("currently").innerHTML = currently;
+    document.getElementById("currentlyTop").innerHTML = currently;
+ 
     
 }

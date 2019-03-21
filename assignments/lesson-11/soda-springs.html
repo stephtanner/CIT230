@@ -26,8 +26,8 @@
                 </div>
             </div>
             <div class=currentConditions>
-                <img src="images/sun.png" alt="sunny">
-                <p>Currently: Sunny</p>
+                <img id="topIcon" src="images/1x1.png" alt="Current Weather Icon">
+                <p>Currently: <span id="currentlyTop"></span></p>
             </div>
             </div>
     </header>
@@ -47,45 +47,45 @@
         </div>
     </nav>
     <main>
-        <h1>Soda Springs</h1>
+        <h1 id="town">Soda Springs</h1>
         <div class="heroImageSoda heroImage">
             <div class="weatherSummary summaryBackground">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="currentlySoda"></span></p>
-                <p>Temperature: <span id="tempSoda"></span>&deg;F</p>
-                <p>Humidity: <span id="humiditySoda"></span>%</p>
-                <p>Wind Speed: <span id="windSoda"></span>mph</p>
-                <p>Wind Chill: <span id="windchillOutputSoda"></span>&deg;F</p>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="temp"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span>mph</p>
+                <p>Wind Chill: <span id="windchillOutput"></span>&deg;F</p>
             </div>
         </div>
         <div class="weather">
             <h2>Weather Forecast</h2>
             <table>
             <tr>
-                <th id="forecastDay1Soda"></th>
-                <th id="forecastDay2Soda"></th>
-                <th id="forecastDay3Soda"></th>
-                <th id="forecastDay4Soda"></th>
-                <th id="forecastDay5Soda"></th>
+                <th id="forecastDay1"></th>
+                <th id="forecastDay2"></th>
+                <th id="forecastDay3"></th>
+                <th id="forecastDay4"></th>
+                <th id="forecastDay5"></th>
             </tr>
             <tr>
-                <td><img id="forecast1iconSoda" alt="forecast icon"></td>
-                <td><img id="forecast2iconSoda" alt="forecast icon"></td> 
-                <td><img id="forecast3iconSoda" alt="forecast icon"> </td> 
-                <td><img id="forecast4iconSoda" alt="forecast icon"></td> 
-                <td><img id="forecast5iconSoda" alt="forecast icon"></td> 
+                <td><img id="forecast1icon" alt="forecast icon" src="images/1x1.png"></td>
+                <td><img id="forecast2icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast3icon" alt="forecast icon" src="images/1x1.png"> </td> 
+                <td><img id="forecast4icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast5icon" alt="forecast icon" src="images/1x1.png"></td> 
             </tr>
             <tr>
-                <td><span id="forecastDay1TempSoda"></span>&deg;F</td> 
-                <td><span id="forecastDay2TempSoda"></span>&deg;F</td>
-                <td><span id="forecastDay3TempSoda"></span>&deg;F</td>
-                <td><span id="forecastDay4TempSoda"></span>&deg;F</td>
-                <td><span id="forecastDay5TempSoda"></span>&deg;F</td>
+                <td><span id="forecastDay1Temp"></span>&deg;F</td> 
+                <td><span id="forecastDay2Temp"></span>&deg;F</td>
+                <td><span id="forecastDay3Temp"></span>&deg;F</td>
+                <td><span id="forecastDay4Temp"></span>&deg;F</td>
+                <td><span id="forecastDay5Temp"></span>&deg;F</td>
             </tr>
             </table>
         </div>
     <h1>Soda Springs Town Events</h1>
-        <p id="sodaEvents"></p>
+        <p id="sodaEvent"></p>
         
 
         <article>
@@ -108,11 +108,11 @@
     <footer>
         <p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p> | weather from <a href="https://openweathermap.org/">Open Weather Map</a>
         
-        <script src="scripts/soda-weather.js"></script>
+        <script src="scripts/weather.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/individualtowndata.js"></script>
-        <script src="scripts/currentweathersoda.js"></script>
+        <script src="scripts/currentweather.js"></script>
     </footer>
 </body>
 </html>

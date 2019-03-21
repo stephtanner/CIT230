@@ -26,8 +26,8 @@
                 </div>
             </div>
             <div class=currentConditions>
-                <img src="images/sun.png" alt="sunny">
-                <p>Currently: Sunny</p>
+                <img id="topIcon" src="images/1x1.png" alt="Current Weather Icon">
+                <p>Currently: <span id="currentlyTop"></span></p>
             </div>
             </div>
     </header>
@@ -47,7 +47,7 @@
         </div>
     </nav>
     <main>
-        <h1>Preston</h1>
+        <h1 id="town">Preston</h1>
         <div class="heroImagePreston heroImage">
             <div class="weatherSummary summaryBackground">
                 <h3>Weather Summary</h3>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="weather">
-            <h1>Weather Forecast</h1>
+            <h2>Weather Forecast</h2>
             <table>
             <tr>
                 <th id="forecastDay1"></th>
@@ -69,11 +69,11 @@
                 <th id="forecastDay5"></th>
             </tr>
             <tr>
-                <td><img id="forecast1icon" alt="forecast icon"></td>
-                <td><img id="forecast2icon" alt="forecast icon"></td> 
-                <td><img id="forecast3icon" alt="forecast icon"> </td> 
-                <td><img id="forecast4icon" alt="forecast icon"></td> 
-                <td><img id="forecast5icon" alt="forecast icon"></td> 
+                <td><img id="forecast1icon" alt="forecast icon" src="images/1x1.png"></td>
+                <td><img id="forecast2icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast3icon" alt="forecast icon" src="images/1x1.png"> </td> 
+                <td><img id="forecast4icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast5icon" alt="forecast icon" src="images/1x1.png"></td> 
             </tr>
             <tr>
                 <td><span id="forecastDay1Temp"></span>&deg;F</td> 
@@ -84,14 +84,14 @@
             </tr>
             </table>
         </div>
-    <h1>Preston Town Events</h1>
-        <p id="prestonEvents"></p>
+    <h2>Preston Town Events</h2>
+        <p id="prestonEvent"></p>
         
 
         <article>
             <div class="coverImage">
                 <div class="article">
-            <h1>Fresh Raspberry Ice Cream</h1>
+            <h2>Fresh Raspberry Ice Cream</h2>
             <h4>by Stephanie Tanner</h4>
                 </div>
             </div>
@@ -99,7 +99,7 @@
         </article>
 
         <section class="contactInformation">
-            <h1>Contact Information</h1>
+            <h2>Contact Information</h2>
             <div class="contactCenteredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
             <img src="images/map.jpg" alt="image of headquarters">
             </div>
