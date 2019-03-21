@@ -204,7 +204,7 @@ footer {
 .gridGallery{    
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 5vwl);
+    grid-template-rows: repeat(3, 5vw);
     grid-gap: 15px;
     margin-left: 15px;
     margin-right: 15px;
