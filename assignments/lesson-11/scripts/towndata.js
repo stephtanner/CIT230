@@ -15,7 +15,8 @@ request.send();
 //waiting for the response to return from the server 
 request.onload = function() { 
 var prestonInfo = request.response; 
-populatePreston(prestonInfo) 
+populatePreston(prestonInfo);
+//populateIndividual(prestonInfo);
 } 
 
 function populatePreston(jsonObj){ 
@@ -60,3 +61,43 @@ var towns = jsonObj["towns"];
     }
 } 
 
+
+
+/*function populateIndividual(jsonObj){
+    var mytown = document.getElementById("town").innerHTML;
+var param = "";
+    if (mytown === "Fish Haven"){
+        param = "fish";
+    }
+    else if (mytown === "Soda Springs"){
+        param = "soda";
+    }
+    else if (mytown === "Preston"){
+        param = "preston";
+    }
+
+var createID = param + "Event";
+
+        
+var allData = jsonObj["towns"]; 
+
+    for (var i= 0; i < allData.length; i++){
+        var name = allData[i].name;
+        if(name === "Preston") {
+            individualTownEvents();
+        }
+        else if (name === "Soda Springs"){
+            individualTownEvents();
+        }
+        else if (name === "Fish Haven"){
+            individualTownEvents();            
+        }
+    }
+} 
+
+function individualTownEvents(){
+    for(var x=0; x<allData[i].events.length; x++){
+                var event = document.createElement("p");
+                event.textContent = allData[i].events[x];
+                document.getElementById(createID).value.appendChild(event);
+    }}*/

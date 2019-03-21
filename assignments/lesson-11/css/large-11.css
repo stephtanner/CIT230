@@ -64,9 +64,15 @@ table img {
 }
     
 /*Cover Image for Article and Article Alignment */
-    .coverImage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rasplargeview320by226.jpg");
-    }
+   .coverImageFish{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rasplargeview320by226.jpg");
+}
+.coverImageSoda{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/small-soda-article.jpg");
+}
+.coverImagePreston{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/small-preston-article.jpg");
+}
     .coverImage{
         max-width: 33.3%;
         margin-left: 2em;

@@ -137,9 +137,16 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("
 
 /*article section including the image, title, text, and read more button*/
 @media only screen and (min-width: 0px) and (max-width: 800px){
-.coverImage{
+.coverImageFish{
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rasp800by533webopt.jpg");
-}}
+}
+.coverImageSoda{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/large-soda-article.jpg");
+}
+.coverImagePreston{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/large-preston-article.jpg");
+}
+}
 .coverImage{
     height: 15em;
     background-position: center;

@@ -26,20 +26,21 @@ var allData = jsonObj["towns"];
         if(name === "Preston") {
             for(var x=0; x<allData[i].events.length; x++){
                 var event = document.createElement("p");
-                event.textContent = allData[i].events[x]; document.getElementById("prestonEvent").appendChild(event);
+                event.textContent = allData[i].events[x]; 
+                document.getElementById("prestonEvent").appendChild(event);
             }   
         }
         else if (name === "Soda Springs"){
-            for(var x=0; x<allData[i].events.length; x++){
+            for(x=0; x<allData[i].events.length; x++){
                 var event = document.createElement("p");
-                event.textContent = allData[i].events[x];
+                event.textContent = allData[i].events[x]; 
                 document.getElementById("sodaEvent").appendChild(event);
             }
         }
         else if (name === "Fish Haven"){
-            for(var x=0; x<allData[i].events.length; x++){
+            for(x=0; x<allData[i].events.length; x++){
                 var event = document.createElement("p");
-                event.textContent = allData[i].events[x];
+                event.textContent = allData[i].events[x]; 
                 document.getElementById("fishEvent").appendChild(event);
             }             
         }
