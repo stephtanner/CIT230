@@ -1,6 +1,6 @@
 let weatherRequest = new XMLHttpRequest();
 //create an "apiURLstring" variable that stores the API call URL
-var apiURLstring = "http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial"
+var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial"
     
     //"api.openweathermap.org/data/2.5/weather?id=5604473"
 

@@ -1,6 +1,6 @@
 //forecast section of the site
 let forecastRequest = new XMLHttpRequest();
-var apiURLstringForecast = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial";
+var apiURLstringForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=6a18fdc3fb96886bfb7ee69a25df0b86&units=imperial";
 
 forecastRequest.open('GET', apiURLstringForecast, true);
 
@@ -39,7 +39,7 @@ console.log(output);
     //icon for the weather forecast
     var forecastIcon = output[0].weather[0].icon;
      //concat front url + icon name (end of url), have image with and .src = the new url
-    var iconURL = "http://openweathermap.org/img/w/" + forecastIcon + ".png";
+    var iconURL = "https://openweathermap.org/img/w/" + forecastIcon + ".png";
     document.getElementById("forecast1icon").src = iconURL;
    
     
@@ -57,7 +57,7 @@ console.log(output);
     //icon for the weather forecast
     var forecastIcon1 = output[1].weather[0].icon;
      //concat front url + icon name (end of url), have image with and .src = the new url
-    var iconURL1 = "http://openweathermap.org/img/w/" + forecastIcon1 + ".png";
+    var iconURL1 = "https://openweathermap.org/img/w/" + forecastIcon1 + ".png";
     document.getElementById("forecast2icon").src = iconURL1;
    
     
@@ -75,7 +75,7 @@ console.log(output);
     //icon for the weather forecast
     var forecastIcon2 = output[2].weather[0].icon;
      //concat front url + icon name (end of url), have image with and .src = the new url
-    var iconURL2 = "http://openweathermap.org/img/w/" + forecastIcon2 + ".png";
+    var iconURL2 = "https://openweathermap.org/img/w/" + forecastIcon2 + ".png";
     document.getElementById("forecast3icon").src = iconURL2;
    
     
@@ -92,7 +92,7 @@ console.log(output);
     //icon for the weather forecast
     var forecastIcon3 = output[3].weather[0].icon;
      //concat front url + icon name (end of url), have image with and .src = the new url
-    var iconURL3 = "http://openweathermap.org/img/w/" + forecastIcon3 + ".png";
+    var iconURL3 = "https://openweathermap.org/img/w/" + forecastIcon3 + ".png";
     document.getElementById("forecast4icon").src = iconURL3;
    
     
@@ -109,7 +109,7 @@ console.log(output);
     //icon for the weather forecast
     var forecastIcon4 = output[4].weather[0].icon;
      //concat front url + icon name (end of url), have image with and .src = the new url
-    var iconURL4 = "http://openweathermap.org/img/w/" + forecastIcon4 + ".png";
+    var iconURL4 = "https://openweathermap.org/img/w/" + forecastIcon4 + ".png";
     document.getElementById("forecast5icon").src = iconURL4;
    
     
