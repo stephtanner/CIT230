@@ -1,4 +1,9 @@
 //use javascript for menu if necessary
 function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+	var x = document.getElementById("toggleDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

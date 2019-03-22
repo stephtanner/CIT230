@@ -2,16 +2,17 @@
 @media only screen and (min-width: 800px){
 
 /*current conditions block on large display*/
-    .currentConditions img {
-        height: 30px;
-        margin-right: -1.8em
-    } 
-    .currentConditions {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 8em;   
-    }
+.currentConditions img {
+    height: 30px;
+    margin-right: -1.8em
+} 
+.currentConditions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8em;   
+}
+    
 /*Navigation for large screen*/    
 nav{
     background-color: #D3D3D3;
@@ -73,47 +74,65 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("
 .coverImagePreston{
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/small-preston-article.jpg");
 }
-    .coverImage{
-        max-width: 33.3%;
-        margin-left: 2em;
-    }
-    
-    article p {
-        width: 55%;
-        float: right;
-        margin-top: -13em;  
-    }
+.coverImage{
+    max-width: 33.3%;
+    margin-left: 2em;
+}
+
+article p {
+    width: 55%;
+    float: right;
+    margin-top: -13em;  
+}
 
 /*hero Image*/
 .heroImagePreston{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/flatlay800by533web.jpg");
-    }
-    .heroImageFish{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1020-680-fish-haven.jpg");        
-    }
-    .heroImageSoda{
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1020-680-soda.jpg");       
-    }
+}
+.heroImageFish{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1020-680-fish-haven.jpg");        
+}
+.heroImageSoda{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1020-680-soda.jpg");       
+}
+.heroImageStorm{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/storm-large.jpg");
+}
 
 /*Gallery*/
-  .gridGallery{
-    display:grid;
+.gridGallery{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 5vw);
     grid-gap: 15px;
     margin-left: 15px;
     margin-right: 15px;  
 }
-    .box-shadow:hover{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }    
+.box-shadow:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}    
     
 /*home page*/
-    .welcomeMessage p{
-        width: 60%;
+.welcomeMessage p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}    
+ 
+/*Storm Center*/
+    .stormForm{
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
-    }    
-    
-    
+    }
+.stormInline{
+    display: inline-flex;
+}
+   
+#radio{
+    margin-top: 1.3em;
+}
+.stormInline p {
+    text-align: left;
+}
+
 }

@@ -14,7 +14,8 @@ request.send();
 
 //waiting for the response to return from the server 
 request.onload = function() { 
-var townData = request.response; 
+var townData = request.response;
+var mytown = document.getElementById("town").innerHTML;
 populateData(townData);
  }
 
@@ -23,26 +24,12 @@ var allData = jsonObj["towns"];
 
     for (var i= 0; i < allData.length; i++){
         var name = allData[i].name;
-        if(name === "Preston") {
-            for(var x=0; x<allData[i].events.length; x++){
+       if (name === mytown){
+            for(x=0; x<allData[i].events.length; x++){
                 var event = document.createElement("p");
                 event.textContent = allData[i].events[x]; 
-                document.getElementById("prestonEvent").appendChild(event);
+                document.getElementById("eventsList").appendChild(event);
             }   
+            
         }
-        else if (name === "Soda Springs"){
-            for(x=0; x<allData[i].events.length; x++){
-                var event = document.createElement("p");
-                event.textContent = allData[i].events[x]; 
-                document.getElementById("sodaEvent").appendChild(event);
-            }
-        }
-        else if (name === "Fish Haven"){
-            for(x=0; x<allData[i].events.length; x++){
-                var event = document.createElement("p");
-                event.textContent = allData[i].events[x]; 
-                document.getElementById("fishEvent").appendChild(event);
-            }             
-        }
-    }
-} 
+    }}

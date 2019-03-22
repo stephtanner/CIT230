@@ -2,7 +2,7 @@
 var mytown = document.getElementById("town").innerHTML;
 var param = "";
     if (mytown === "Fish Haven"){
-        param = "lat=42&lon=111";
+        param = "lat=42&lon=-111";
     }
     else if (mytown === "Soda Springs"){
         param = "id=5607916";
