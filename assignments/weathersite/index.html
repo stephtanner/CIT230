@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston, Soda Springs, and Fish Haven, Idaho Weather Site Home Page">
+    <title>Simply Frigid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+</head>
+   
+<body>
+    <header>
+        <div class="centeredBox">
+            <figure>
+                <img class="logo" src="images/logoweb.jpg" alt="Simply Frigid Logo">
+            </figure>
+            <div class="titleTag">
+                <h1 class=title>Simply Frigid</h1>
+                <div class="motto">
+                    <p>Because You Never Know With Idaho</p>
+                </div>
+            </div>
+            </div>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleMenu()">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                    <li><a href="fish-haven.html">Fish Haven</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="gridGallery">
+            <div class="cityBox">
+                <h2>Preston</h2>
+                <img src="images/preston.jpg" alt="Image of Preston Idaho">
+                <div id="prestonTownData"></div>
+            </div> 
+            <div class="cityBox">
+                <h2>Soda Springs</h2>
+                <img src="images/soda-springs.jpg" alt="Image of Soda Springs Idaho">
+                <div id="sodaSpringsTownData"></div>
+            </div> 
+            <div class="cityBox">
+                <h2>Fish Haven</h2>
+                <img src="images/fish-haven.jpg" alt="Image of Fish Haven Idaho">
+                <div id="fishHavenTownData"></div>
+            </div>
+        
+        </div>
+        <section class="welcomeMessage">
+            <h2>Welcome to Simply Frigid!</h2>
+            <p>Simply Frigid is your very own weather site, especially dedicated to everyone who lives in Preston, Soda Springs, and Fish Haven, Idaho. We love our small towns in Idaho and we are proud to live in these beautiful places.</p>
+            <p>Here at Simply Frigid, we are dedicated to bringing you up-to-date weather forecasts in addition to valuable information and articles about your specific towns. Be sure to check back regularly to get updates on the events that are going on in your town. We will let you know when there is a special festival, holiday, or event in your town.</p>
+            <p>We hope that you feel a part of our community. Be sure to contact us if you would like us to post anything about an event your are a part of or if you have any additional ideas for this site.</p>
+        </section>
+
+        <section class="contactInformation">
+            <h2>Contact Information</h2>
+            <div class="contactCenteredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
+            <img src="images/map.jpg" alt="image of headquarters">
+            </div>
+        </section>
+    </main>
+    <footer>
+<p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+        <script src="scripts/towndata.js"></script>
+    </footer>
+</body>
+</html>

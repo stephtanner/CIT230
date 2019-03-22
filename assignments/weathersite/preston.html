@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Site Page">
+    <title>Simply Frigid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+</head>
+   
+<body>
+    <header>
+        <div class="centeredBox">
+            <figure>
+                <img class="logo" src="images/logoweb.jpg" alt="Simply Frigid Logo">
+            </figure>
+            <div class="titleTag">
+                <h1 class=title>Simply Frigid</h1>
+                <div class="motto">
+                    <p>Because You Never Know With Idaho</p>
+                </div>
+            </div>
+            <div class=currentConditions>
+                <img id="topIcon" src="images/1x1.png" alt="Current Weather Icon">
+                <p>Currently: <span id="currentlyTop"></span></p>
+            </div>
+            </div>
+    </header>
+       <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleMenu()">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                    <li><a href="fish-haven.html">Fish Haven</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1 id="town">Preston</h1>
+        <div class="heroImagePreston heroImage">
+            <div class="weatherSummary summaryBackground">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="temp"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span>mph</p>
+                <p>Wind Chill: <span id="windchillOutput"></span>&deg;F</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Weather Forecast</h2>
+            <table>
+            <tr>
+                <th id="forecastDay1"></th>
+                <th id="forecastDay2"></th>
+                <th id="forecastDay3"></th>
+                <th id="forecastDay4"></th>
+                <th id="forecastDay5"></th>
+            </tr>
+            <tr>
+                <td><img id="forecast1icon" alt="forecast icon" src="images/1x1.png"></td>
+                <td><img id="forecast2icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast3icon" alt="forecast icon" src="images/1x1.png"> </td> 
+                <td><img id="forecast4icon" alt="forecast icon" src="images/1x1.png"></td> 
+                <td><img id="forecast5icon" alt="forecast icon" src="images/1x1.png"></td> 
+            </tr>
+            <tr>
+                <td><span id="forecastDay1Temp"></span>&deg;F</td> 
+                <td><span id="forecastDay2Temp"></span>&deg;F</td>
+                <td><span id="forecastDay3Temp"></span>&deg;F</td>
+                <td><span id="forecastDay4Temp"></span>&deg;F</td>
+                <td><span id="forecastDay5Temp"></span>&deg;F</td>
+            </tr>
+            </table>
+        </div>
+    <h2>Preston Town Events</h2>
+        <p id="eventsList"></p>
+        
+
+        <article>
+            <div class="coverImage coverImagePreston">
+                <div class="article">
+            <h2>Summer in Preston</h2>
+            <h4>by Stephanie Tanner</h4>
+                </div>
+            </div>
+            <p>Summer is just around the corner here in Preston and we are looking forward to everything that Idaho has to offer. Here are some ideas for your summer bucket list in Preston.<br>
+            Star Gazing - Don’t forget to stay out at least once this summer to look at the beautiful night sky. The further away you are from main street, the better the view will be.<br>
+            Visit nearby attractions - We have so many attractions at our finger tips! Ross Park in Pocatello, Lava Hotsprings, and Bear Lake are close enough to visit for a day trip.<button type="button">Read More</button></p>
+        </article>
+
+        <section class="contactInformation">
+            <h2>Contact Information</h2>
+            <div class="contactCenteredBox"><p>Simply Frigid <br>Preston, ID <br>(208)757-6654 <br>hello@simplyfrigid.com</p>
+            <img src="images/map.jpg" alt="image of headquarters">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Simply Frigid 2019 | Created by Stephanie Tanner | BYUI 2019 | <span id="demo"></span> <span id="demo1"></span></p> | weather from <a href="https://openweathermap.org/">Open Weather Map</a>
+        
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/individualtowndata.js"></script>
+        <script src="scripts/currentweather.js"></script>
+    </footer>
+</body>
+</html>
