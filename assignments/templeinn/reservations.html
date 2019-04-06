@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Make a Reservation for a Hotel Room">
+    <title>Temple Inn and Suites - Reservations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,400,700|Source+Sans+Pro:300,400"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--The reservation page contains a form that collects relevant information when making a normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, home state or country, and special accommodations/comments. You will need to use the CSS flex method for the layout of your reservation form for full credit. -->
+    <header>
+        <img src="images/templelogo.png" alt="logo">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="temples.html">Temples</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservations.html" class="active">Reservations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="reservationPage">
+        <form class="form-box resForm" action="reservationsuccess.html">
+            <h2>Make A Reservation</h2>
+            <fieldset>
+                <div style="text-align:center">
+                    <div class="formDropdown">
+                        <select>
+                            <option value="locations" disabled selected>Temple Location</option>
+                            <option value="KievUkraine">Kiev, Ukraine</option>
+                            <option value="Monticello">Monticello, Utah</option>
+                            <option value="SanAntonio">San Antonio, Texas</option>
+                            <option value="Preston">Preston, England</option>
+                        </select>
+                    </div>
+                </div>
+                <label>Start Date</label>
+                <input type="date" name="startDate">
+                <label>End Date</label>
+                <input type="date" name="endDate">
+
+                <div style="text-align:center">
+                    <div class="formDropdown">
+                        <select>
+                            <option value="numroom" disabled selected>Number of Rooms</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <div class="formDropdown">
+                        <select>
+                            <option value="rooms" disabled selected>Type of Room</option>
+                            <option value="SingleQueen">Single Queen</option>
+                            <option value="DoubleQueen">Double Queen</option>
+                            <option value="longterm">Long-term Suite</option>
+                            <option value="King">King</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>First Name</label>
+                <input type="text" name="firstName" required>
+                <label>Last Name</label>
+                <input type="text" name="lastName" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
+                <label>Phone Number</label>
+                <input type="tel" name="telephone" required>
+                <label>Address</label>
+                <input type="text" name="state">
+                <label>Additional Comments</label>
+                <textarea></textarea>
+            </fieldset>
+            <input type="submit">
+
+        </form>
+    </main>
+    <footer>
+    <p>&copy; Stephanie Tanner 2019 | <a href="lontermstay.html">Full-time Missionaries</a> | <a href="receptions.html">Wedding Receptions</a> | <a href="#">References</a></p>
+    <script src="scripts/toggle.js"></script>
+        <script src="scripts/toggle.js"></script>
+    </footer>
+</body>
+
+</html>

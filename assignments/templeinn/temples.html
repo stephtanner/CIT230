@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Temples that We Serve at Temple Inns and Suites">
+    <title>Temple Inn and Suites - Temples We Serve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,400,700|Source+Sans+Pro:300,400"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/templelogo.png" alt="logo">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="temples.html" class="active">Temples</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples We Serve</h1>
+        <p class="sixtypercent">Temple Inn and Suites currently serves 4 temples around the world. We look forward to
+            serving more in the future.</p>
+        <!--The temple page describes the details for at least four temples of your choice providing information about the address, telephone, email, services, history, ordinance schedule, session schedule, temple closure schedule (from a JSON source), and summary—current weather information obtained from a third party API.  -->
+
+        <h2><span class="templeName" id="town">Kiev</span>, Ukraine Temple</h2>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/temples/500-333-kiev.jpg" alt="Kiev Temple"
+                class="templePic">
+            <source media="(min-width: 801px)" srcset="images/temples/900-600-kiev.jpg" alt="Kiev Temple"
+                class="templePic">
+            <img src="images/temples/500-333-kiev.jpg" alt="Kiev Temple Fallback" class="templePic">
+        </picture>
+        <p class="sixtypercent">One temple that we are located near is the Kiev, Ukraine Temple. This beautiful temple is situated on a hill to the south west of the city in the Svyatoshyns'kyi District. The Kiev temple was the 134th operating temple. It was also the first temple located within the former Soviet Union. This temple serves members from 3 stakes and 16 districts across Russia, Ukraine, Armenia, Belarus, Moldova, and Romania.</p>
+
+
+        <div class="flex templeIcons">
+            <div class="flex-row">
+                <img src="images/200phone.jpg" alt="phone number icon">
+                <div>
+                    <p>Phone Number</p>
+                    <ul>
+                        <li>(380)44-371-4088</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/food-200.jpg" alt="services icon">
+                <div>
+                    <p>Services</p>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>Patron housing available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/heart-200.jpg" alt="milestones icon">
+                <div>
+                    <p>Milestones</p>
+                    <ul>
+                        <li>20 July 1998 - Announced</li>
+                        <li>23 June 2007 - Groundbreaking</li>
+                        <li>29 August 2010 - Dedicated</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/world-200.jpg" alt="weather icon">
+                <div>
+                    <p>Current Weather</p>
+                    <ul>
+                        <li>Currently: <span id="Kievcurrently"></span></li>
+                        <li>Temperature: <span id="Kievtemp"></span>&deg;F</li>
+                        <li>Humidity: <span id="Kievhumidity"></span>%</li>
+                        <li>Wind Speed: <span id="Kievwind"></span>mph</li>
+                        <li>Wind Chill: <span id="Kievwindchill"></span>&deg;F</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="schedule">
+            <h3>Session Schedule</h3>
+            <table>
+                <tr>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                </tr>
+                <tr>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:30 AM</th>
+                </tr>
+                <tr>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                    <th>2:00 PM</th>
+                </tr>
+                <tr>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                    <th>4:30 PM</th>
+                </tr>
+            </table>
+        </section>
+        <section class="closures">
+            <h3>Closures</h3>
+            <div id="KievclosureList"></div>
+        </section>
+        <div class="templePageButton">
+            <a href="reservations.html"><button type="button">Make a Reservation Now</button></a>
+        </div>
+
+        <h2>Preston, England Temple</h2>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/temples/500-333-preston.jpg" alt="Preston Temple"
+                class="templePic">
+            <source media="(min-width: 801px)" srcset="images/temples/900-600-preston.jpg" alt="Preston Temple"
+                class="templePic">
+            <img src="images/temples/500-333-Preston.jpg" alt="Preston Temple Fallback" class="templePic">
+        </picture>
+        <p class="sixtypercent">The Preston, England Temple was a special one for President Gordon B. Hinkley. This is where the Prophet served his mission in his youth. It is located north of Liverpool and Manchester. It is part of an extensive church complex alongside the England Missionary Training Center, a distribution center, and a family history center.</p>
+
+        <div class="flex templeIcons">
+            <div class="flex-row">
+                <img src="images/200phone.jpg" alt="phone number icon">
+                <div>
+                    <p>Phone Number</p>
+                    <ul>
+                        <li>(44)1257-226-100</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/food-200.jpg" alt="services icon">
+                <div>
+                    <p>Services</p>
+                    <ul>
+                        <li>Clothing rental available</li>
+                        <li>Cafeteria available</li>
+                        <li>Patron housing available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/heart-200.jpg" alt="milestones icon">
+                <div>
+                    <p>Milestones</p>
+                    <ul>
+                        <li>19 October 1992 - Announced</li>
+                        <li>12 June 1994 - Groundbreaking</li>
+                        <li>7 June 1998 - Dedicated</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/world-200.jpg" alt="weather icon">
+                <div>
+                    <p>Current Weather</p>
+                    <ul>
+                        <li>Currently: <span id="Prestoncurrently"></span></li>
+                        <li>Temperature: <span id="Prestontemp"></span>&deg;F</li>
+                        <li>Humidity: <span id="Prestonhumidity"></span>%</li>
+                        <li>Wind Speed: <span id="Prestonwind"></span>mph</li>
+                        <li>Wind Chill: <span id="Prestonwindchill"></span>&deg;F</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="schedule">
+            <h3>Session Schedule</h3>
+            <table>
+                <tr>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>8:00 AM</th>
+                    <th>8:00 AM</th>
+                    <th>8:00 AM</th>
+                    <th>8:00 AM</th>
+                    <th>8:00 AM</th>
+                </tr>
+                <tr>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                </tr>
+                <tr>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                </tr>
+                <tr>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>11:00 AM</th>
+                </tr>
+                <tr>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                </tr>
+                <tr>
+                    <th>1:00 PM</th>
+                    <th>1:00 PM</th>
+                    <th>1:00 PM</th>
+                    <th>1:00 PM</th>
+                    <th>1:00 PM</th>
+                </tr>
+                <tr>
+                    <th>2:00 PM</th>
+                    <th>2:00 PM</th>
+                    <th>2:00 PM</th>
+                    <th>2:00 PM</th>
+                    <th>2:00 PM</th>
+                </tr>
+                <tr>
+                    <th>3:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>3:00 PM</th>
+                </tr>
+                <tr>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                    <th>4:00 PM</th>
+                </tr>
+                <tr>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                </tr>
+                <tr>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                    <th>6:00 PM</th>
+                </tr>
+                <tr>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                </tr>
+                <tr>
+                    <th>7:30 PM</th>
+                    <th>7:30 PM</th>
+                    <th>7:30 PM</th>
+                    <th>7:30 PM</th>
+                </tr>
+            </table>
+        </section>
+        <section class="closures">
+            <h3>Closures</h3>
+            <div id="PrestonclosureList"></div>
+        </section>
+        <div class="templePageButton">
+            <a href="reservations.html"><button type="button">Make a Reservation Now</button></a>
+        </div>
+
+        <h2>San Antonio, Texas Temple</h2>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/temples/500-333-SanAntonio.jpg" alt="San Antonio Temple"
+                class="templePic">
+            <source media="(min-width: 801px)" srcset="images/temples/900-600-SanAntonio.jpg" alt="San Antonio Temple"
+                class="templePic">
+            <img src="images/temples/500-333-SanAntonio.jpg" alt="San Antonio Temple Fallback" class="templePic">
+        </picture>
+        <p class="sixtypercent">The San Antonio Temple is a beautiful temple with unique stained glass windows. The stained glass on the front of the temple rises from a dark blue to a light blue background, depicting the moon, stars, and sun. One of the stained glass windows on the back of the temple showcases the tree of life with all white fruit. This temple was the fourth temple built in Texas.</p>
+        <div class="flex templeIcons">
+            <div class="flex-row">
+                <img src="images/200phone.jpg" alt="phone number icon">
+                <div>
+                    <p>Phone Number</p>
+                    <ul>
+                        <li>(1)210-538-0034</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/food-200.jpg" alt="services icon">
+                <div>
+                    <p>Services</p>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>Patron housing available</li>
+                        <li>Distribution center nearby</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/heart-200.jpg" alt="milestones icon">
+                <div>
+                    <p>Milestones</p>
+                    <ul>
+                        <li>24 June 2001 - Announced</li>
+                        <li>29 March 2003 - Groundbreaking</li>
+                        <li>22 May 2005 - Dedicated</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/world-200.jpg" alt="weather icon">
+                <div>
+                    <p>Current Weather</p>
+                    <ul>
+                        <li>Currently: <span id="SanAntoniocurrently"></span></li>
+                        <li>Temperature: <span id="SanAntoniotemp"></span>&deg;F</li>
+                        <li>Humidity: <span id="SanAntoniohumidity"></span>%</li>
+                        <li>Wind Speed: <span id="SanAntoniowind"></span>mph</li>
+                        <li>Wind Chill: <span id="SanAntoniowindchill"></span>&deg;F</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="schedule">
+            <h3>Session Schedule</h3>
+            <table>
+                <tr>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>3:00 PM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>9:00 AM</th>
+                    <th>7:30 AM</th>
+                </tr>
+                <tr>
+                    <th>4:30 PM</th>
+                    <th>10:30 AM</th>
+                    <th>10:30 AM</th>
+                    <th>10:30 AM</th>
+                    <th>9:00 AM</th>
+                </tr>
+                <tr>
+                    <th>6:30 PM</th>
+                    <th>12:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>10:30 AM</th>
+                </tr>
+                <tr>
+                    <th>8:00 PM</th>
+                    <th>3:00 PM</th>
+                    <th>4:30 PM</th>
+                    <th>4:30 PM</th>
+                    <th>12:00 PM</th>
+                </tr>
+            </table>
+        </section>
+        <section class="closures">
+            <h3>Closures</h3>
+            <div id="AntonioclosureList"></div>
+        </section>
+        <div class="templePageButton">
+            <a href="reservations.html"><button type="button">Make a Reservation Now</button></a>
+        </div>
+        
+        <h2>Monticello, Utah Temple</h2>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/temples/500-333-Mont.jpg" alt="Monticello Temple"
+                class="templePic">
+            <source media="(min-width: 801px)" srcset="images/temples/900-600-Monticello.jpg" alt="Monticello Temple"
+                class="templePic">
+            <img src="images/temples/500-333-Mont.jpg" alt="Monticello Temple Fallback" class="templePic">
+        </picture>
+        <p class="sixtypercent">The Monticello Temple is a beautiful little temple situated on the west side of Monticello, a little town. It was the 11th temple built in Utah and it was the first new generation of smaller temples while President Gordon B. Hinkley was Presdident of the Church.This temple serves patrons in the four corners district of the United States.</p>
+        <div class="flex templeIcons">
+            <div class="flex-row">
+                <img src="images/200phone.jpg" alt="phone number icon">
+                <div>
+                    <p>Phone Number</p>
+                    <ul>
+                        <li>(1)435-587-3500</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/food-200.jpg" alt="services icon">
+                <div>
+                    <p>Services</p>
+                    <ul>
+                        <li>No clothing rental available</li>
+                        <li>No cafeteria available</li>
+                        <li>No patron housing available</li>
+                        <li>No distribution center nearby</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/heart-200.jpg" alt="milestones icon">
+                <div>
+                    <p>Milestones</p>
+                    <ul>
+                        <li>4 October 1997 - Announced</li>
+                        <li>17 November 1997 - Groundbreaking</li>
+                        <li>26 July 1998 - Dedicated</li>
+                        <li>17 November 2002 - Rededicated</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row">
+                <img src="images/world-200.jpg" alt="weather icon">
+                <div>
+                    <p>Current Weather</p>
+                    <ul>
+                        <li>Currently: <span id="Monticellocurrently"></span></li>
+                        <li>Temperature: <span id="Monticellotemp"></span>&deg;F</li>
+                        <li>Humidity: <span id="Monticellohumidity"></span>%</li>
+                        <li>Wind Speed: <span id="Monticellowind"></span>mph</li>
+                        <li>Wind Chill: <span id="Monticellowindchill"></span>&deg;F</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="schedule">
+            <h3>Session Schedule</h3>
+            <table>
+                <tr>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>10:00 AM</th>
+                    <th>8:00 AM</th>
+                </tr>
+                <tr>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>12:00 PM</th>
+                    <th>10:00 AM</th>
+                </tr>
+                <tr>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                    <th>5:00 PM</th>
+                    <th>1:00 PM</th>
+                </tr>
+                <tr>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                    <th>7:00 PM</th>
+                    <th>3:00 PM</th>
+                </tr>
+            </table>
+        </section>
+        <section class="closures">
+            <h3>Closures</h3>
+            <div id="MonticelloclosureList"></div>
+        </section>
+        <div class="templePageButton">
+            <a href="reservations.html"><button type="button">Make a Reservation Now</button></a>
+        </div>
+    </main>
+    <footer>
+    <p>&copy; Stephanie Tanner 2019 | <a href="lontermstay.html">Full-time Missionaries</a> | <a href="receptions.html">Wedding Receptions</a> | <a href="#">References</a></p>
+    <script src="scripts/toggle.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/templeclosure.js"></script>
+        <script src="scripts/currentweather.js"></script>
+    </footer>
+</body>
+
+</html>

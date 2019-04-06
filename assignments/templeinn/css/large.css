@@ -1,0 +1,442 @@
+h1, h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    text-align: center;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+}
+/*Header*/
+header {
+    text-align: center;
+}
+/*topnav*/
+    /* Add a background color to the top navigation */
+    .topnav{
+        background-color: #E7E8E3;
+        overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav a{  
+        display: inline-flex;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #695E61;
+        color: black;
+    }
+    /* Add an active class to highlight the current page */
+    .active {
+        background-color: #945451;
+    }
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+    }
+/*background image*/
+.homeBackgroundImg{
+    background-image: url("../images/background-large.jpg");
+    height: 400px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.floatLeft{
+    float: left;
+    clear: both;
+}
+.topCall{
+    text-align: left;
+    padding-left: .3em;
+    margin-top: 1.5em;
+    max-width: 800px;
+    margin-bottom: -.2em;
+}
+button {
+    padding: 1em;
+    font-size: 1.3em;
+    margin: 1em;
+    background-color: rgb(177, 130, 128, .7);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*Main*/
+.sixtypercent{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 810px){
+/*Picture with pink overlay*/
+#floatCenter{
+    display: flex;
+    justify-content: center;
+}
+
+#hotelBackground{
+    display: grid;
+    background-image: url(../images/large-room.jpg);
+    background-repeat: no-repeat;
+}
+
+#pinkBackground{
+    background-color: rgb(177, 130, 128, .3); /*#945451*/
+    width: 6em;
+    font-size: 5em;
+    margin-left: 3em;
+}
+}
+/*free amenities section*/
+#freeAmenities img{
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+}
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+.container{
+    padding: 1em 0;
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+@media screen and (min-width: 810px){
+  .container{
+    width: 16.2%;
+  }
+}
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+   border-radius: 50%;
+}
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 98%;
+  width: 100%;
+    border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+  opacity: 1;
+}
+.content-image{
+  width: 100%;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+@media screen and (min-width: 810px){
+/*specialized services*/
+.grid{
+    max-width: 815px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }}
+.grid img {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caption{
+    max-width: 400px;
+    font-weight: 300;
+    margin-top: 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*footer*/
+footer {
+    background-color: rgb(177, 130, 128, .6);
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 300;
+    font-size: .8em;
+}
+/*Contact Us*/
+#contactUs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;   
+}
+#contactUs img{
+    height: 100px;
+    border-radius: 50%;
+}
+.flex {
+    display: flex;
+}
+.flex p {
+    margin: 1em;
+    font-weight: 300;
+    margin-right: 3em;
+}
+/*Contact Page Form*/
+.form-box {
+    max-width: 500px;
+    margin: 3em auto;
+    padding: 50px;
+    background: #ffffff;
+    border: 10px solid #f2f2f2;
+}
+.form-box h1, .form-box p {
+    text-align: center;
+}
+input, textarea {
+    width: 100%;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+label{
+    padding: 1em;
+}
+/*Contact Page Map*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom: 20%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Services Page*/
+.weddingIcons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+.weddingIcons img{
+    height: 100px;
+    border-radius: 50%;
+    padding: 1em;
+}
+.weddingIcons p{
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 300;
+}
+.flex-row{
+    display: flex;
+    align-content: center;
+}
+#servicesList{
+   width:inherit;
+    margin: inherit;
+    margin-top:inherit;
+    font-weight: 400;
+}
+/*Reservations Page*/
+#reservationPage{
+    background-color: #D8CCBE;
+}
+.resForm{
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 320px;
+}
+.formDropdown select{
+   padding: 10px 10px;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    margin-bottom: 1em
+}
+.formDropdown select:focus {
+    outline: none;
+}
+/*Wedding Page*/
+#flowerCover{
+    background-image: url(../images/1020-680-flowers.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.inlineImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    height: auto;
+}
+@media screen and (min-width: 810px){
+.tester img{
+    float: left;
+    padding: 0 2em 2em 2em;
+}
+.tester{
+    overflow: auto;
+}
+.tester p {
+padding-right: 2em;
+}
+}
+.foodGrid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.foodGrid img{
+    padding: 1em;
+}
+/*Temple Page*/
+.templePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.templeInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.templeIcons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1em;  
+}
+.templeIcons img{
+    height: 100px;
+    border-radius: 50%;
+    padding: 1em;
+}
+.templeIcons p, ul{
+    width: 300px;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 300; 
+}
+table{
+    border: solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table th{
+    font-weight: 300;
+}
+.closures h3, .closures p, .schedule h3{
+    font-weight: 300;
+    text-align: center;
+}
+.templePageButton{
+    text-align: center;
+    margin-bottom: 5em;
+}
+/*longterm*/
+@media screen and (min-width: 810px){
+#longGallery{
+    box-sizing: border-box;
+    max-width: 850px;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Create two equal columns that floats next to each other */
+.row{
+    display: flex;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+    max-width: 400px;
+}
+.column img {
+  margin-top: 12px;
+    max-width: 400px;
+}
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Thank You*/
+.thankYouLogo{
+    justify-content: center;
+    font-weight: 300;
+    padding-bottom: 12em;
+}
+.thankYouLogo p {
+    margin-left: 1em;
+}

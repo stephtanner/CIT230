@@ -1,0 +1,174 @@
+@media screen and (max-width: 600px) {
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+/*specialized services*/
+.sixtypercent{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 3em;
+}
+.grid img {
+    width: 300px;
+}
+
+.caption{
+    width: 300px;
+    font-weight: 300;
+    margin-top: -.2em;
+    text-align: center;
+}
+  
+    
+/*Free Amenitites*/
+.container{
+    display: inline-flex;
+    width: 48%;
+    justify-content: center;
+  align-content: center;
+  }
+
+    
+/*Temple Page*/
+    .templePic{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    .templeIcons{
+       padding-left: .3em;
+    }
+    .templeIcons p, ul{
+        width:200px;
+    }
+   
+/*Home Page*/
+.homeBackgroundImg{
+    background-image: url("../images/home-background-600-400.jpg");
+    }
+    
+/*Contact Us*/
+#contactUs {
+    justify-content: left;
+    padding: 1em; 
+}
+    
+ /*Reservation Page*/   
+.resForm{
+    padding-left: 1em;
+    padding-right: 1em;
+    } 
+    
+/*Longterm Missionary Page*/
+    /*longterm*/
+#longGallery{
+    box-sizing: border-box;
+    max-width: 799px;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-flow: column wrap;
+}
+.column {
+    float: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 100%;
+    max-width: 400px;
+}
+.column img {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+  
+/*Reception Page*/
+.tester img{
+    float: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#flowerCover{
+    background-image: url(../images/flowersheader-600-400.jpg);
+    }
+    
+.tester p, .tester h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}  
+.servicesImg{
+    display: block;
+    max-width: 400px;
+    height: auto;
+}
+    
+/*Home Page*/
+/*Picture with pink overlay*/
+#hotelBackground{
+    background: none;
+}
+#pinkBackground{
+    background-color: rgb(177, 130, 128, .3);
+    font-size: 3.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2em;
+    width: 6em;
+}
+    
+/*specialized services*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caption{
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+}
+
+

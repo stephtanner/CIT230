@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Temple Inn and Suites">
+    <title>Temple Inn and Suites - Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,400,700|Source+Sans+Pro:300,400"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--The contact page will contain essential contact information including an embedded Google map (Links to an external site.)Links to an external site. showing the company headquarter address at 4800 Montgomery Ln #300, Bethesda, MD 20814 and a basic Contact Us form.  -->
+    <header>
+        <img src="images/templelogo.png" alt="logo">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="temples.html">Temples</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <p class="sixtypercent">Do you have any questions before you make a reservation? You can contact us through the
+            form below.</p>
+
+        <div id="contactUs">
+            <div class="flex">
+                <img src="images/200email.jpg" alt="email">
+                <p>EMAIL<br>hello@templesuites.com</p>
+            </div>
+            <div class="flex">
+                <img src="images/200phone.jpg" alt="call">
+                <p>PHONE <br> (208)757-6654</p>
+            </div>
+        </div>
+        <div class="form-box">
+            <h2>Get In Touch</h2>
+            <form action="thanks.html">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="Name" required>
+
+                <label for="email" required>Email</label>
+                <input id="email" type="email" name="Email">
+
+                <label for="message" required>Message</label>
+                <textarea id="message" name="Message"></textarea>
+                <input class="button-primary" type="submit" value="Submit" />
+            </form>
+        </div>
+
+        <section>
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048529398!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800+Montgomery+Ln%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1553914510435!5m2!1sen!2sus"
+                    width="1600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Stephanie Tanner 2019 | BYUI Final Project | April 2019</p>
+        <script src="scripts/toggle.js"></script>
+    </footer>
+</body>
+
+</html>
