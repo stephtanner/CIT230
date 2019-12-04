@@ -5,7 +5,7 @@
 var request = new XMLHttpRequest(); 
 request.overrideMimeType("application/json")
 //open new request using open() method 
-request.open('GET', '../json/temples.json', true); 
+request.open('GET', '..templeinn/json/temples.json', true); 
 
 //here we are setting the responseType to json 
 //tells that this should be converted behind sceens to JavaScript object 
